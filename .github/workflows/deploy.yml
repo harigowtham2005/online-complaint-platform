@@ -1,9 +1,9 @@
-name: Deploy to GitHub Pages
+name: Deploy React to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Change to 'master' if that's your branch
+      - main
 
 permissions:
   contents: read
@@ -15,23 +15,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Install dependencies
+      - name: Install frontend dependencies
         run: npm install
         working-directory: ./frontend
 
-      - name: Build the project
+      - name: Build frontend
         run: npm run build
         working-directory: ./frontend
 
-      - name: Upload build for GitHub Pages
+      - name: Upload build artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./frontend/build
