@@ -37,6 +37,11 @@ jobs:
         with:
           path: ./frontend/build
 
+      - name: Upload static files
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./frontend/build
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
