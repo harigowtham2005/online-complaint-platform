@@ -3,7 +3,7 @@ name: Deploy React to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main
 
 permissions:
   contents: read
@@ -34,7 +34,7 @@ jobs:
       - name: Add .nojekyll file
         run: touch ./frontend/build/.nojekyll
 
-      - name: Upload build artifact
+      - name: Upload build output
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./frontend/build
