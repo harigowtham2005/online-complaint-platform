@@ -2,6 +2,7 @@
   "name": "complaint-frontend",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://harigowtham2005.github.io/online-complaint-platform",
   "dependencies": {
     "axios": "^1.6.0",
     "bootstrap": "^5.3.7",
@@ -14,7 +15,10 @@
     "socket.io-client": "^4.7.2"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
