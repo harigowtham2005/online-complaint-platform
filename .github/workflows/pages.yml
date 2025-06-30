@@ -28,14 +28,16 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./frontend
 
       - name: Build React app
         run: npm run build
+        working-directory: ./frontend
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: ./frontend/build
 
   deploy:
     needs: build
