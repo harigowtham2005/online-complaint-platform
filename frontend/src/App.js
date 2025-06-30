@@ -11,7 +11,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/online-complaint-platform">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
