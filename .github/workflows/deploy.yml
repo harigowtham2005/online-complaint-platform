@@ -3,7 +3,7 @@ name: Deploy React to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # or your default branch
 
 permissions:
   contents: read
@@ -15,19 +15,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Install frontend dependencies
+      - name: Install dependencies
         run: npm install
         working-directory: ./frontend
 
-      - name: Build frontend
+      - name: Build the project
         run: npm run build
         working-directory: ./frontend
+
+      - name: Add .nojekyll file
+        run: touch ./frontend/build/.nojekyll
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v2
