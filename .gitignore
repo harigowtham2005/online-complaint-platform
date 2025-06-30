@@ -1,0 +1,5 @@
+*.zip 
+*.mp4 
+*.exe 
+*.db 
+node_modules/ 
