@@ -30,7 +30,7 @@ jobs:
         run: npm run build
 
       - name: Upload build output
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./build  # or ./dist or ./docs (depending on your frontend build)
 
