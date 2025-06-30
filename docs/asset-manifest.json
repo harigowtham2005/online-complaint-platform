@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/online-complaint-platform/static/css/main.9e698ccd.css",
+    "main.js": "/online-complaint-platform/static/js/main.f386b6d9.js",
+    "index.html": "/online-complaint-platform/index.html",
+    "main.9e698ccd.css.map": "/online-complaint-platform/static/css/main.9e698ccd.css.map",
+    "main.f386b6d9.js.map": "/online-complaint-platform/static/js/main.f386b6d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e698ccd.css",
+    "static/js/main.f386b6d9.js"
+  ]
+}
