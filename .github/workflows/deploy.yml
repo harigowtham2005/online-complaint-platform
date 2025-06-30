@@ -35,7 +35,7 @@ jobs:
         run: touch ./frontend/build/.nojekyll
 
       - name: Upload build output
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./frontend/build
 
