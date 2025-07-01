@@ -45,5 +45,9 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+app.get("/api/auth/test", (req, res) => {
+  res.send("API is working");
+});
+
+
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
