@@ -22,10 +22,12 @@ const server = http.createServer(app);
 // Setup Socket.IO
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL,
+    origin: "https://harigowtham2005.github.io",
     methods: ["GET", "POST"],
-  },
+    credentials: true
+  }
 });
+
 
 // Middlewares
 app.use(cors({
