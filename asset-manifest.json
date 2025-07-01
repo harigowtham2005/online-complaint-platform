@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/online-complaint-platform/static/css/main.9e698ccd.css",
-    "main.js": "/online-complaint-platform/static/js/main.8a83c972.js",
-    "static/media/banner.jpg": "/online-complaint-platform/static/media/banner.a44557141103ee1bf949.jpg",
+    "main.js": "/online-complaint-platform/static/js/main.4aee08b0.js",
     "index.html": "/online-complaint-platform/index.html",
     "main.9e698ccd.css.map": "/online-complaint-platform/static/css/main.9e698ccd.css.map",
-    "main.8a83c972.js.map": "/online-complaint-platform/static/js/main.8a83c972.js.map"
+    "main.4aee08b0.js.map": "/online-complaint-platform/static/js/main.4aee08b0.js.map"
   },
   "entrypoints": [
     "static/css/main.9e698ccd.css",
-    "static/js/main.8a83c972.js"
+    "static/js/main.4aee08b0.js"
   ]
 }
