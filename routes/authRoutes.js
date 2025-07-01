@@ -3,6 +3,9 @@ import { registerUser, loginUser, getProfile } from "../controllers/authControll
 import authMiddleware from "../middleware/authMiddleware.js";
 
 const router = express.Router();
+router.get("/test", (req, res) => {
+  res.send("API working");
+});
 
 router.post("/register", registerUser);
 router.post("/login", loginUser);

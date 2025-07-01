@@ -21,9 +21,16 @@ const io = new Server(server, {
     methods: ["GET", "POST"]
   }
 });
+app.use(cors({
+  origin: "https://harigowtham2005.github.io",
+  methods: ["GET", "POST"],
+  credentials: true
+}));
 
-app.use(cors());
 app.use(express.json());
+app.get("/api/auth/test", (req, res) => {
+  res.send("API is working");
+});
 
 // Routes
 app.use("/api/auth", authRoutes);
